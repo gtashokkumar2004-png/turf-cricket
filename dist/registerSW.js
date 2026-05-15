@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/turf-cricket/sw.js', { scope: '/turf-cricket/' })})}
