@@ -36,6 +36,10 @@ export default function Home() {
         <div style={{ fontSize: '3.5rem', lineHeight: 1 }}>🏏</div>
         <h1 style={{ fontSize: '1.9rem', fontWeight: 900, marginTop: 10 }}>Turf Cricket</h1>
         <p className="text-muted text-sm" style={{ marginTop: 6 }}>Ball-by-ball scorer for your weekend matches</p>
+        <div className="zuko-brand-pill">
+          <span className="powered-text">Powered by</span>
+          <img src="/zukolabs-logo.jpg" alt="Zuko Labs" className="zuko-logo-img" />
+        </div>
       </div>
 
       <InstallBanner />
@@ -88,6 +92,15 @@ export default function Home() {
       <div style={{ margin: '8px 0 0', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
         <TodayDashboard history={history} />
       </div>
+
+      {/* Footer */}
+      <footer className="app-footer">
+        <img src="/zukolabs-logo.jpg" alt="Zuko Labs" className="footer-logo" />
+        <span className="footer-text">Built with ❤️ for cricket</span>
+        <a href="https://zukolabs.co.in" target="_blank" rel="noopener noreferrer" className="footer-link">
+          zukolabs.co.in
+        </a>
+      </footer>
 
       {showHowTo && <HowToUseModal onClose={() => setShowHowTo(false)} />}
       <BottomNav />

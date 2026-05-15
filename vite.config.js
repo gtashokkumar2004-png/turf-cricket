@@ -21,7 +21,7 @@ export default defineConfig({
       manifest: {
         name: 'Turf Cricket',
         short_name: 'TurfCric',
-        description: 'Ball-by-ball cricket scorer for turf matches',
+        description: 'Ball-by-ball cricket scorer by Zuko Labs',
         theme_color: '#064e3b',
         background_color: '#022c22',
         display: 'standalone',
