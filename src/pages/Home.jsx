@@ -33,7 +33,7 @@ export default function Home() {
     <div className="page" style={{ position: 'relative' }}>
       {/* Zuko Labs logo — top right corner */}
       <div className="top-right-logo">
-        <img src="/zukolabs-logo.jpg" alt="Zuko Labs" className="corner-logo" />
+        <img src="/zukolabs-logo.png" alt="Zuko Labs" className="corner-logo" />
       </div>
 
       {/* Hero */}
