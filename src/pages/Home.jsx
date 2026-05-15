@@ -30,7 +30,12 @@ export default function Home() {
   }
 
   return (
-    <div className="page">
+    <div className="page" style={{ position: 'relative' }}>
+      {/* Zuko Labs logo — top right corner */}
+      <div className="top-right-logo">
+        <img src="/zukolabs-logo.jpg" alt="Zuko Labs" className="corner-logo" />
+      </div>
+
       {/* Hero */}
       <div style={{ background: 'var(--navy)', padding: '28px 16px 18px', textAlign: 'center' }}>
         <div style={{ fontSize: '3.5rem', lineHeight: 1 }}>🏏</div>
@@ -38,7 +43,7 @@ export default function Home() {
         <p className="text-muted text-sm" style={{ marginTop: 6 }}>Ball-by-ball scorer for your weekend matches</p>
         <div className="zuko-brand-pill">
           <span className="powered-text">Powered by</span>
-          <img src="/zukolabs-logo.jpg" alt="Zuko Labs" className="zuko-logo-img" />
+          <span className="zuko-labs-text">ZUKO LABS</span>
         </div>
       </div>
 
@@ -95,7 +100,6 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="app-footer">
-        <img src="/zukolabs-logo.jpg" alt="Zuko Labs" className="footer-logo" />
         <span className="footer-text">Built with ❤️ for cricket</span>
         <a href="https://zukolabs.co.in" target="_blank" rel="noopener noreferrer" className="footer-link">
           zukolabs.co.in
